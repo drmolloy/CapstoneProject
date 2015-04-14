@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.params=aName\ aWins
+comment0.target=Team(java.lang.String,\ int)
+comment0.text=\r\n\ Constructs\ a\ team\ object\r\n\ @param\ aName\ the\ name\ of\ the\ team\r\n\ @param\ aWins\ the\ number\ of\ wins\ the\ team\ has\r\n
+numComments=1
