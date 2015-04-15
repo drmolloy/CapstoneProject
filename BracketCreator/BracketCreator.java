@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 /**
  * Write a description of class BracketCreater here.
@@ -16,6 +17,7 @@ public class BracketCreator
             System.out.println("How many teams are in the tournament(Enter: 4,8,16,32,64): ");
             numTeams = numScanner.nextInt();
         }
+        ArrayList<Team> Teams = new ArrayList<Team>();
         for (int i = 0; i < numTeams; i++)
         {
             Scanner nameScanner = new Scanner(System.in);
@@ -24,7 +26,8 @@ public class BracketCreator
             Scanner winsScanner = new Scanner(System.in);
             System.out.println("Enter the number of wins that team has: ");
             int wins = winsScanner.nextInt();
-            
+            Team team = new Team(name,wins);
+            Teams.add(team);
         }
     }
 }
