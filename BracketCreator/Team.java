@@ -13,4 +13,12 @@ public class Team
         name = aName;
         wins = aWins;
     }
+    public String getName()
+    {
+        return name;
+    }
+    public int getWins()
+    {
+        return wins;
+    }
 }
