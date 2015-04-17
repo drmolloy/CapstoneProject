@@ -1,12 +1,13 @@
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.*;
 /**
  * Write a description of class BracketCreater here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class BracketCreator
+public class BracketCreator 
 {
     public static void main(String[] args)
     {
@@ -28,6 +29,10 @@ public class BracketCreator
             int wins = winsScanner.nextInt();
             Team team = new Team(name,wins);
             teams.add(team);
+        }
+        for (int j = 0; j < teams.size(); j++)
+        {
+            System.out.print(teams.get(j).toString());
         }
     }
 }
