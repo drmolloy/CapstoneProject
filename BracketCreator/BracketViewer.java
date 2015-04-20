@@ -12,7 +12,8 @@ public class BracketViewer
         JFrame frame = new JFrame();
         frame.setTitle("Bracket");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(1000,1000);
+        frame.setSize(750,750);
+        frame.setContentPane(new JLabel(new ImageIcon("bracket.jpg")));
         frame.setVisible(true);
     }
 }
