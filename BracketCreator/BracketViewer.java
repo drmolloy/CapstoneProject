@@ -13,13 +13,11 @@ public class BracketViewer
         BracketCreator bc = new BracketCreator();
         ArrayList<Team> teams = bc.initTeams();
         teams = bc.sort(teams);
-        frame.setContentPane(new JLabel(new ImageIcon("bracket.jpg")));
+        //frame.setContentPane(new JLabel(new ImageIcon("bracket.jpg")));
         frame.setVisible(true);
         JPanel first = new JPanel();
-        JLabel firstName = new JLabel(teams.get(0).getName());
-        JLabel firstWins = new JLabel(String.valueOf(teams.get(0).getWins())); 
-        first.add(firstName);
-        first.add(firstWins);
+        JLabel firstSeed = new JLabel(teams.get(0).getName()+" ("+String.valueOf(teams.get(0).getWins())+")");
+        first.add(firstSeed);
         frame.add(first);
     }
 }
