@@ -1,17 +1,18 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.*;
+import javax.swing.*;
 /**
  * Write a description of class BracketCreater here.
  * 
          * @author (your name) 
  * @version (a version number or a date)
  */
-public class BracketCreator 
+public class BracketCreator
 {
-    public static void main(String[] args)
+    public ArrayList<Team> initTeams()
     {
-        int numTeams = 4;
+        int numTeams = 2;
         ArrayList<Team> teams = new ArrayList<Team>();
         for (int i = 0; i < numTeams; i++)
         {
@@ -26,10 +27,29 @@ public class BracketCreator
         }
 
     
-        for (int j = 0; j < teams.size(); j++)
-        {
-            System.out.print(teams.get(j).toString());
-        }
+        return teams;
         
     }
+    public ArrayList<Team> sort(ArrayList<Team> teams)
+    {
+        for (int i = 0; i < teams.size()-1; i++)
+        {
+            int mostWins = teams.get(i).getWins();
+            int indexOfMostWins = i;
+            for (int j=i; j<teams.size(); j++)
+            {
+                if (teams.get(j).getWins() > mostWins)
+                {
+                    mostWins = teams.get(j).getWins();
+                    indexOfMostWins = j;
+                }
+            }
+            Team temp = teams.get(i);
+            teams.set(i,teams.get(indexOfMostWins));
+            teams.set(indexOfMostWins,temp);
+        }
+        return teams;
+    }
+   
+    
 }
