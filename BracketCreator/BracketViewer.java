@@ -16,7 +16,9 @@ public class BracketViewer
         //frame.setContentPane(new JLabel(new ImageIcon("bracket.jpg")));
         frame.setVisible(true);
         JPanel first = new JPanel();
+        frame.setLayout(null);
         JLabel firstSeed = new JLabel(teams.get(0).getName()+" ("+String.valueOf(teams.get(0).getWins())+")");
+        firstSeed.setLocation(0,0);
         first.add(firstSeed);
         frame.add(first);
     }
