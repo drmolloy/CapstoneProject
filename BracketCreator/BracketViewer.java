@@ -14,12 +14,16 @@ public class BracketViewer
         ArrayList<Team> teams = bc.initTeams();
         teams = bc.sort(teams);
         //frame.setContentPane(new JLabel(new ImageIcon("bracket.jpg")));
-        frame.setVisible(true);
         JPanel first = new JPanel();
-        frame.setLayout(null);
+        first.setLayout(null);
         JLabel firstSeed = new JLabel(teams.get(0).getName()+" ("+String.valueOf(teams.get(0).getWins())+")");
-        firstSeed.setLocation(0,0);
+        firstSeed.setBounds(10,0,50,50);
         first.add(firstSeed);
         frame.add(first);
+        JLabel secondSeed = new JLabel(teams.get(1).getName()+" ("+String.valueOf(teams.get(0).getWins())+")");
+        secondSeed.setBounds(10,30,50,50);
+        first.add(secondSeed);
+        frame.add(first);
+        frame.setVisible(true);
     }
 }
