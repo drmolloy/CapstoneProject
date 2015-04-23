@@ -12,7 +12,7 @@ public class BracketCreator
 {
     public ArrayList<Team> initTeams()
     {
-        int numTeams = 2;
+        int numTeams = 16;
         ArrayList<Team> teams = new ArrayList<Team>();
         for (int i = 0; i < numTeams; i++)
         {
