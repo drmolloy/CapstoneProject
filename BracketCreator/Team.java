@@ -25,14 +25,23 @@ public class Team
         team.add(nameLabel);
         team.add(winLabel);
     }
+    /**
+     * This method return the team's name
+     */
     public String getName()
     {
         return name;
     }
+    /**
+     * This method return the team's wins
+     */
     public int getWins()
     {
         return wins;
     }
+    /**
+     * This method return the team's name and wins together as a string
+     */
     public String toString()
     {
         return name+" "+wins;

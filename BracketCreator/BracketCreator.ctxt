@@ -1,6 +1,8 @@
 #BlueJ class context
 comment0.params=
 comment0.target=java.util.ArrayList\ initTeams()
+comment0.text=\r\n\ This\ method\ asks\ the\ user\ to\ input\ a\ team\ name\ and\ the\ number\ of\ wins\ that\ team\ has.\ It\ then\ creates\ a\ team\ object\ with\ that\ information\ and\ adds\ the\ team\ object\r\n\ to\ an\ array\ list\ of\ all\ of\ the\ team\ objects\ and\ returns\ that\ array\ list.\r\n
 comment1.params=teams
 comment1.target=java.util.ArrayList\ sort(java.util.ArrayList)
+comment1.text=\r\n\ This\ method\ itereates\ through\ the\ array\ list\ of\ all\ of\ the\ team\ objects\ and\ sorts\ them\ from\ most\ wins\ to\ least\ wins.\ It\ then\ returns\ the\ array\ list\ of\ teams.\r\n
 numComments=2

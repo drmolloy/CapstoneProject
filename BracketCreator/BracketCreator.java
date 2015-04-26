@@ -3,13 +3,18 @@ import java.util.Scanner;
 import java.util.*;
 import javax.swing.*;
 /**
- * Write a description of class BracketCreater here.
+ * This class asks the user to input the team name and the number of wins that team has. It then stores each team object in an array list. Lastly it sorts the array list
+ * and orders the teams from most wins to least wins and returns that as an array list.
  * 
-         * @author (your name) 
- * @version (a version number or a date)
+ * @Duncan Molloy
+ * @4/24/15
  */
 public class BracketCreator
 {
+    /**
+     * This method asks the user to input a team name and the number of wins that team has. It then creates a team object with that information and adds the team object
+     * to an array list of all of the team objects and returns that array list.
+     */
     public ArrayList<Team> initTeams()
     {
         int numTeams = 16;
@@ -30,6 +35,9 @@ public class BracketCreator
         return teams;
         
     }
+    /**
+     * This method itereates through the array list of all of the team objects and sorts them from most wins to least wins. It then returns the array list of teams.
+     */
     public ArrayList<Team> sort(ArrayList<Team> teams)
     {
         for (int i = 0; i < teams.size()-1; i++)

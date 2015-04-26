@@ -2,6 +2,10 @@ import java.awt.*;
 import javax.swing.*;
 import java.util.ArrayList;
 
+/**
+ * This class creates a frame and displays all of the teams in a bracket style format with the best 
+ * team playing the worst team, the second best team playing the second worst team and so on.
+ */
 public class BracketViewer
 {
     public static void main(String[] args)
@@ -13,7 +17,6 @@ public class BracketViewer
         BracketCreator bc = new BracketCreator();
         ArrayList<Team> teams = bc.initTeams();
         teams = bc.sort(teams);
-        //frame.setContentPane(new JLabel(new ImageIcon("bracket.jpg")));
         JPanel first = new JPanel();
         first.setLayout(null);
         JLabel firstSeed = new JLabel("1 "+teams.get(0).getName()+" ("+String.valueOf(teams.get(0).getWins())+")");
